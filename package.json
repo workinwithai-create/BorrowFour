@@ -1,0 +1,7 @@
+{
+  "name": "borrowfour",
+  "private": true,
+  "scripts": {
+    "build": "echo static"
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BorrowFour</title>
+  <meta name="description" content="Four bars of borrowed harmony so a stuck loop can finally end. Live piano, nylon, upright, kit, trumpet, and violin." />
+  <meta name="theme-color" content="#14110e" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314110e'/%3E%3Crect x='5' y='16' width='4' height='10' rx='1' fill='%23f6efe2'/%3E%3Crect x='11' y='7' width='4' height='19' rx='1' fill='%23e2a23a'/%3E%3Crect x='17' y='16' width='4' height='10' rx='1' fill='%23f6efe2'/%3E%3Crect x='23' y='12' width='4' height='14' rx='1' fill='%23f6efe2'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Outfit:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="desk">
+    <p class="kicker">Finish desk</p>
+    <h1>BorrowFour</h1>
+    <p class="quiet">The loop never leaves the key, so it cannot end. Four bars borrow one color, then the tonic is allowed to land. Live chairs only.</p>
+    <p id="status" class="quiet">Tap play to seat the live chairs.</p>
+    <div class="transport">
+      <button id="playA" class="primary" type="button">Home loop</button>
+      <button id="playB" type="button">Full twelve</button>
+      <button id="play8" type="button">Borrow + return</button>
+      <button id="stop" type="button">Stop</button>
+    </div>
+    <section id="bars" class="panel" aria-label="Twelve bar form"></section>
+    <div class="grid">
+      <section id="grooves" class="panel"></section>
+      <section id="moves" class="panel"></section>
+    </div>
+    <section class="panel">
+      <div class="transport">
+        <button id="copy" type="button">Copy punch list</button>
+        <button id="midi" type="button">Download MIDI</button>
+      </div>
+      <pre id="punch"></pre>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

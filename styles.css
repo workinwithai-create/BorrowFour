@@ -1,0 +1,38 @@
+:root {
+  --bg: #14110e;
+  --surface: #221c16;
+  --fg: #f6efe2;
+  --muted: #b3a28c;
+  --brass: #e2a23a;
+  --ink: #1a1206;
+  --line: #3d342b;
+  font-family: Outfit, system-ui, sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); }
+button { cursor: pointer; font: inherit; color: inherit; }
+.desk { width: min(880px, calc(100% - 1.5rem)); margin: 0 auto; padding: 1.25rem 0 3rem; }
+h1 { font-family: Fraunces, Georgia, serif; font-size: 2.6rem; line-height: 0.95; margin: 0.1rem 0 0.4rem; font-weight: 560; }
+.kicker { letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); font-size: 0.75rem; margin: 0; }
+.quiet { color: var(--muted); font-size: 0.92rem; line-height: 1.45; }
+.transport { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.8rem 0; }
+.transport button { min-height: 2.75rem; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); padding: 0 0.95rem; }
+.transport button.primary { background: var(--brass); color: var(--ink); border-color: var(--brass); }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 0.85rem; padding: 0.85rem; margin-top: 0.8rem; }
+.grid { display: grid; gap: 0.8rem; }
+@media (min-width: 800px) { .grid { grid-template-columns: 1fr 1fr; } }
+.choice, .bar { width: 100%; text-align: left; border-radius: 0.7rem; border: 1px solid transparent; background: transparent; padding: 0.6rem 0.7rem; }
+.choice.on { border-color: var(--brass); background: #2c241c; }
+.choice b { display: block; }
+.choice span { color: var(--muted); font-size: 0.82rem; }
+.lane { display: grid; grid-template-columns: 4.5rem 1fr; gap: 0.4rem; margin-bottom: 0.45rem; }
+.lane-name { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; }
+.bars { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.35rem; }
+.bar { min-height: 4rem; border: 1px solid var(--line); background: var(--bg); }
+.bar.color { background: color-mix(in oklab, var(--brass) 34%, var(--bg)); border-color: var(--brass); }
+.bar.hot { outline: 2px solid var(--brass); }
+.bar .n { font-size: 0.68rem; color: var(--muted); }
+.bar .c { font-family: Fraunces, Georgia, serif; font-size: 1.25rem; }
+pre { white-space: pre-wrap; color: var(--muted); font-size: 0.75rem; line-height: 1.45; }
