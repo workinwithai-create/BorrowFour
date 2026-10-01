@@ -1,7 +1,6 @@
 {
   "name": "borrowfour",
   "private": true,
-  "scripts": {
-    "build": "echo static"
-  }
+  "version": "1.0.0",
+  "description": "Four-bar borrowed-harmony desk for bedroom producers and AI-music finishers"
 }
